@@ -332,7 +332,7 @@ export const getPublicationsById = `
     }
     ... on LimitedFeeCollectModuleSettings {
       type
-      collectLiimt
+      collectLimit
       amount {
         asset {
           ...Erc20Fields
@@ -408,7 +408,7 @@ export const getPublicationsById = `
       ...PublicationStatsFields
     }
     metadata {
-      ...MetadataOutPutFields
+      ...MetadataOutputFields
     }
     createdAt
     collectModule {
@@ -425,7 +425,7 @@ export const getPublicationsById = `
     hasCollectedByMe
   }
 
-  fragment MirrorsFields on Mirror {
+  fragment MirrorFields on Mirror {
     ...MirrorBaseFields
     mirrorOf {
     ... on Post {
